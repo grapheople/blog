@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
+import { AuthStatus } from "./auth-status";
 
 export function SiteHeader() {
   return (
@@ -18,6 +19,7 @@ export function SiteHeader() {
           >
             posts
           </Link>
+          <AuthStatus />
           <ThemeToggle />
         </nav>
       </div>

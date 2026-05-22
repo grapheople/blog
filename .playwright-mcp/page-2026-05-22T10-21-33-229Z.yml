@@ -1,0 +1,8 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "sign in" [level=1] [ref=e3]
+    - paragraph [ref=e4]: only the blog admin can sign in.
+    - button "GitHub으로 로그인" [ref=e6]
+  - button "Open Next.js Dev Tools" [ref=e12] [cursor=pointer]:
+    - img [ref=e13]
+  - alert [ref=e16]

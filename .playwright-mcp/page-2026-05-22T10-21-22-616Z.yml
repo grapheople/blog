@@ -1,0 +1,37 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "blog" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - link "posts" [ref=e7] [cursor=pointer]:
+          - /url: /posts
+        - link "sign in" [ref=e8] [cursor=pointer]:
+          - /url: /signin
+        - button "Toggle theme" [ref=e9]:
+          - img
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - heading "blog" [level=1] [ref=e13]
+        - paragraph [ref=e14]: 기록하고, 다시 읽고, 고친다.
+      - generic [ref=e15]:
+        - heading "recent" [level=2] [ref=e16]
+        - list [ref=e17]:
+          - listitem [ref=e18]:
+            - link "App Router에서 서버 컴포넌트를 기본값으로 2026-05-18" [ref=e19] [cursor=pointer]:
+              - /url: /posts/next-app-router-server-components
+              - generic [ref=e20]: App Router에서 서버 컴포넌트를 기본값으로
+              - time [ref=e21]: 2026-05-18
+          - listitem [ref=e22]:
+            - link "TypeScript strict mode를 켜야 하는 이유 2026-05-10" [ref=e23] [cursor=pointer]:
+              - /url: /posts/typescript-strict-mode
+              - generic [ref=e24]: TypeScript strict mode를 켜야 하는 이유
+              - time [ref=e25]: 2026-05-10
+          - listitem [ref=e26]:
+            - link "Hello, world 2026-05-01" [ref=e27] [cursor=pointer]:
+              - /url: /posts/hello-world
+              - generic [ref=e28]: Hello, world
+              - time [ref=e29]: 2026-05-01
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]: © 2026 · built with Next.js

@@ -1,0 +1,9 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "sign in" [level=1] [ref=e3]
+    - paragraph [ref=e4]: only the blog admin can sign in.
+    - paragraph [ref=e5]: 이 계정은 관리자가 아닙니다.
+    - button "GitHub으로 로그인" [ref=e7]
+  - button "Open Next.js Dev Tools" [ref=e13] [cursor=pointer]:
+    - img [ref=e14]
+  - alert [ref=e17]
