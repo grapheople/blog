@@ -1,0 +1,48 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "blog" [ref=e5] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=e6]:
+          - link "posts" [ref=e7] [cursor=pointer]:
+            - /url: /posts
+          - button "Toggle theme" [ref=e8]:
+            - img
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - heading "posts" [level=1] [ref=e11]
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "App Router에서 서버 컴포넌트를 기본값으로 2026-05-18 클라이언트 컴포넌트는 잎(leaf)에만 둔다. next architecture" [ref=e14] [cursor=pointer]:
+              - /url: /posts/next-app-router-server-components
+              - generic [ref=e15]:
+                - heading "App Router에서 서버 컴포넌트를 기본값으로" [level=2] [ref=e16]
+                - time [ref=e17]: 2026-05-18
+              - paragraph [ref=e18]: 클라이언트 컴포넌트는 잎(leaf)에만 둔다.
+              - generic [ref=e19]:
+                - generic [ref=e20]: next
+                - generic [ref=e21]: architecture
+          - listitem [ref=e22]:
+            - link "TypeScript strict mode를 켜야 하는 이유 2026-05-10 타입 안정성과 리팩토링 안전성 사이의 관계. typescript tooling" [ref=e23] [cursor=pointer]:
+              - /url: /posts/typescript-strict-mode
+              - generic [ref=e24]:
+                - heading "TypeScript strict mode를 켜야 하는 이유" [level=2] [ref=e25]
+                - time [ref=e26]: 2026-05-10
+              - paragraph [ref=e27]: 타입 안정성과 리팩토링 안전성 사이의 관계.
+              - generic [ref=e28]:
+                - generic [ref=e29]: typescript
+                - generic [ref=e30]: tooling
+          - listitem [ref=e31]:
+            - link "Hello, world 2026-05-01 첫 번째 글 — 블로그를 만든 이유에 관해. meta" [ref=e32] [cursor=pointer]:
+              - /url: /posts/hello-world
+              - generic [ref=e33]:
+                - heading "Hello, world" [level=2] [ref=e34]
+                - time [ref=e35]: 2026-05-01
+              - paragraph [ref=e36]: 첫 번째 글 — 블로그를 만든 이유에 관해.
+              - generic [ref=e38]: meta
+    - contentinfo [ref=e39]:
+      - generic [ref=e40]: © 2026 · built with Next.js
+  - button "Open Next.js Dev Tools" [ref=e46] [cursor=pointer]:
+    - img [ref=e47]
+  - alert [ref=e50]

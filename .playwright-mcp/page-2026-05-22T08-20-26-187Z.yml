@@ -1,0 +1,39 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "blog" [ref=e5] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=e6]:
+          - link "posts" [ref=e7] [cursor=pointer]:
+            - /url: /posts
+          - button "Toggle theme" [ref=e8]:
+            - img
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - heading "blog" [level=1] [ref=e12]
+          - paragraph [ref=e13]: 기록하고, 다시 읽고, 고친다.
+        - generic [ref=e14]:
+          - heading "recent" [level=2] [ref=e15]
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - link "App Router에서 서버 컴포넌트를 기본값으로 2026-05-18" [ref=e18] [cursor=pointer]:
+                - /url: /posts/next-app-router-server-components
+                - generic [ref=e19]: App Router에서 서버 컴포넌트를 기본값으로
+                - time [ref=e20]: 2026-05-18
+            - listitem [ref=e21]:
+              - link "TypeScript strict mode를 켜야 하는 이유 2026-05-10" [ref=e22] [cursor=pointer]:
+                - /url: /posts/typescript-strict-mode
+                - generic [ref=e23]: TypeScript strict mode를 켜야 하는 이유
+                - time [ref=e24]: 2026-05-10
+            - listitem [ref=e25]:
+              - link "Hello, world 2026-05-01" [ref=e26] [cursor=pointer]:
+                - /url: /posts/hello-world
+                - generic [ref=e27]: Hello, world
+                - time [ref=e28]: 2026-05-01
+    - contentinfo [ref=e29]:
+      - generic [ref=e30]: © 2026 · built with Next.js
+  - button "Open Next.js Dev Tools" [ref=e36] [cursor=pointer]:
+    - img [ref=e37]
+  - alert [ref=e40]
