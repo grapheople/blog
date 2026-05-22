@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { auth } from "@/lib/auth";
+import type { Session } from "next-auth";
 import { SignOutButton } from "./sign-out-button";
 
-export async function AuthStatus() {
-  const session = await auth();
+export function AuthStatus({ session }: { session: Session | null }) {
   if (!session) {
     return (
       <Link
@@ -16,7 +15,6 @@ export async function AuthStatus() {
   }
   return (
     <div className="flex items-center gap-2 text-sm">
-      <span className="text-muted-foreground">{session.user?.name}</span>
       <SignOutButton />
     </div>
   );

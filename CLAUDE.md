@@ -74,6 +74,9 @@ NEXTAUTH_URL=http://localhost:3000
 GITHUB_CLIENT_ID=...
 GITHUB_CLIENT_SECRET=...
 ADMIN_GITHUB_ID=...              # 본인 GitHub user ID (숫자)
+SUPABASE_URL=...                 # https://<project-ref>.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=...    # Project Settings → API → service_role (서버 전용)
+SUPABASE_STORAGE_BUCKET=blog-images   # 선택 (기본값: blog-images)
 ```
 
 Vercel 배포 시 동일 키를 프로젝트 환경변수에 등록.
@@ -107,8 +110,14 @@ pnpm prisma studio
 - 변경 계열 API는 NextAuth 세션의 `isAdmin` 체크를 **반드시** 거친다. 클라이언트 검증에만 의존하지 않는다.
 - 비밀값을 로그/오류 메시지에 노출하지 않는다.
 
+## 이미지 업로드
+
+- Supabase Storage (public bucket) 사용. 서버 라우트 `POST /api/uploads/image`에서 multipart/form-data로 받아 service role 키로 업로드.
+- 허용 MIME: `image/jpeg`, `image/png`, `image/webp`, `image/gif`. 최대 8MB.
+- 경로 패턴: `posts/YYYY/MM/<uuid>.<ext>`. 반환되는 public URL을 TipTap Image 노드에 삽입.
+- **사전 설정**: Supabase 대시보드 → Storage에서 `blog-images` 이름의 **public** 버킷 생성 필요.
+
 ## 미정 사항
 
-- 이미지 업로드 스토리지 (Vercel Blob vs Supabase Storage) — 구현 시점에 결정
 - 댓글 기능 — 1차 릴리스 범위 외 (giscus 검토)
 - RSS / 사이트맵 — 1차 릴리스 포함 권장
